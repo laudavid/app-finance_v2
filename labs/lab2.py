@@ -540,7 +540,12 @@ def lab2_code(select_teacher, select_code, student_ids):
         st.markdown("  ")
         
         st.success("**Instruction**: *What is the set of efficient portfolios ?*")
-        st.dataframe(df_ex2_q4_efficient)
+        # Step 1: Filter out rows with negative ACMTA values
+        df_ex2_q4_efficient_filtered = df_ex2_q4_efficient[df_ex2_q4_efficient['ACMTA'] >= 0]
+        # Step 2: Sort the dataframe by 'Expected return' in descending order
+        df_ex2_q4_efficient_sorted = df_ex2_q4_efficient_filtered.sort_values(by='Expected return', ascending=False)
+
+        st.dataframe(df_ex2_q4_efficient_sorted)
                 
         
     st.markdown("   ")
