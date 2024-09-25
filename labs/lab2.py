@@ -563,7 +563,7 @@ def lab2_code(select_teacher, select_code, student_ids):
 
     st.subheader("Question 5 📝")
 
-    st.markdown('''<p style="font-size: 22px;"> Assume that you also have a risk-free asset with a rate of return of 2% per annum. 
+    st.markdown('''<p style="font-size: 22px;"> Assume that you also have a risk-free asset with a rate of return of 2% per annum. Assume that you can short-sell any asset.
                 <b>Find the tangency portfolio</b>.''', 
                 unsafe_allow_html=True)
     
