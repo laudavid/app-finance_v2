@@ -437,11 +437,8 @@ def lab2_code(select_teacher, select_code, student_ids):
     ## 2. Set of efficient portfolios
    
     st.write("**What is the set of efficient portfolios ?**")
+    answer_2_Q3_2 = st.text_area("Write your answer here", default_text, key="Q3.Ex2.12")
 
-    upload_efficient_portfolios = st.file_uploader("Drop your results in an excel file (.xlsx)", key="Q3.Ex2.U12",type=['xlsx'])
-    answer_2_Q3_2 = ""
-    if upload_efficient_portfolios is not None:
-        answer_2_Q3_2 = "Received"
 
     
     st.markdown("  ")
